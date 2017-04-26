@@ -1,5 +1,8 @@
-node_modules
+#ignore packages
+node_modules/
 
+
+#ignore os files
 .DS_Store
 .DS_Store?
 ._*
