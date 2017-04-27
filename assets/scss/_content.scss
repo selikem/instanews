@@ -1,0 +1,54 @@
+.stories {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.story-cell {
+	flex: 1 0 100%;
+	position: relative;
+}
+
+.story-image {
+	width: 100%;
+	height: auto;
+}
+
+.abstract-container {
+	position: absolute;
+	bottom: 1%;
+	background: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) no-repeat;
+	padding: 0.5rem 0.5rem;
+}
+
+.abstract-container a, .abstract-container a:hover {
+	text-decoration: none;
+	color: #FFF
+
+}
+
+.story-abstract {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.loader-gif {
+	width: 3rem;
+	height: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+	.story-cell {
+		flex-basis: 33.3%
+	}
+
+}
+
+@media screen and (min-width: 1240px) {
+	.story-cell {
+		flex-basis: 25%
+	}
+
+}
