@@ -1,21 +1,31 @@
 .stories {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .story-cell {
 	flex: 1 0 100%;
 	position: relative;
+	height: 60vh;
+	@include tablet {
+		flex-basis: 33.3%;
+		height: 50vh;
+	}
+	@include desktop {
+		flex-basis: 25%;
+		height: 65vh;
+	}
 }
 
 .story-image {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .abstract-container {
 	position: absolute;
-	bottom: 1%;
+	bottom: 0;
 	background: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) no-repeat;
 	padding: 0.5rem 0.5rem;
 }
@@ -23,7 +33,6 @@
 .abstract-container a, .abstract-container a:hover {
 	text-decoration: none;
 	color: #FFF
-
 }
 
 .story-abstract {
@@ -39,16 +48,6 @@
 	transform: translateX(-50%);
 }
 
-@media screen and (min-width: 600px) {
-	.story-cell {
-		flex-basis: 33.3%
-	}
-
-}
-
-@media screen and (min-width: 1240px) {
-	.story-cell {
-		flex-basis: 25%
-	}
-
+.errormsg {
+	text-align: center;
 }
