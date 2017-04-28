@@ -5,10 +5,50 @@
 	align-items: center;
 	margin-top: 10rem;
 	margin-bottom: 2rem;
+	@include tablet {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	@include desktop {
+		justify-content: flex-start;
+		margin-left: 3rem;
+	}
+}
+
+.search-form-container {
+	margin-top: 1rem;
+	align-self: center;
 }
 
 #sections {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	width: 100%;
+	font-size: 1.25rem;
+}
+
+.out-of-way {
+	margin-top: 2rem;
+	@include tablet {
+		height: 10vh;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		.logo img {
+			height: 10vh;
+		}
+		.logo {
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
+		.search-form-container {
+			margin-left: 2rem;
+		}
+	}
+	@include desktop {
+		justify-content: flex-start;
+	}
+	
+	
 }

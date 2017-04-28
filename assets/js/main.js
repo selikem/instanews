@@ -6,6 +6,7 @@ $(function () {
 
 
   $('#sections').on('change', function() {
+    $('.header').addClass('out-of-way');
     $('.loader-gif').show();
     $('.stories').empty();
     var storyString = '';
@@ -22,8 +23,8 @@ $(function () {
       console.log(data);
       hideLoader();
       $.each(data.results, function(index, value) {
-        if (value.multimedia.length >= 5 && runs < 12 ) {
-        storyString += '<div class="story-cell"><img src="'+value.multimedia[4].url+'" class="story-image"><div class="abstract-container"><a href="'+ value.url +'" target="_blank"><p class="story-abstract">'+value.abstract+'</p></a></div></div>';
+        if (value.multimedia.length >= 5 && runs < 12 && value.multimedia[4].width >= 2048) {
+        storyString += '<div class="story-cell"><a href="'+ value.url +'" target="_blank"><img src="'+value.multimedia[4].url+'" class="story-image"><div class="abstract-container"><p class="story-abstract">'+value.abstract+'</p></div></a></div>';
         runs++ ; 
         }
 

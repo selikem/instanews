@@ -1,10 +1,10 @@
 html {
-  font-size: 16px;
+  font-size: $base-font-size;
 }
 
 body {
   background-color: #000;
-  color: #FFF;
+  color: $base-color;
 	font-family: 'open-sans';
 }
 
