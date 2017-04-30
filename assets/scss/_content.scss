@@ -15,7 +15,6 @@
 	}
 	@include desktop {
 		flex-basis: 25%;
-		height: 65vh;
 	}
 	&:hover {
 		.abstract-container {
@@ -33,7 +32,7 @@
 
 .abstract-container {
 	position: absolute;
-	bottom: -100px;
+	bottom: -150px;
 	background: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) no-repeat;
 	padding: 0.5rem 0.5rem;
 	padding-top: 0.5rem;
