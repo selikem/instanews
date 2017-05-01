@@ -35,13 +35,16 @@
 
 .abstract-container {
 	position: absolute;
-	bottom: -150px;
+	bottom: 0;
 	width: 100%;
 	background: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) no-repeat;
 	padding: 0.5rem 0.5rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	transition: all 0.5s ease-in-out 0.1s;
+	@include desktop {
+		bottom: -150px;
+	}
 	&:hover {
 		padding-bottom: 1.5rem;
 		padding-top: 1rem;
