@@ -32,12 +32,12 @@
 .out-of-way-header {
 	margin-top: 2rem;
 	@include tablet {
-		height: 10vh;
+		height: auto;
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
 		.logo img {
-			height: 10vh;
+			height: 15vh;
 		}
 		.logo {
 			margin-left: 2rem;
