@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function () {
-  gulp.src('./assets/scss/style.scss')
+  gulp.src('./scss/style.scss')
     .pipe(prettyerror())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -18,11 +18,11 @@ gulp.task('sass', function () {
     }))
     .pipe(cssnano())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./assets/build/css'))
+    .pipe(gulp.dest('./build/css'))
 });
 
 gulp.task('scripts', ['lint'], function() {
-  gulp.src('./assets/js/*.js')
+  gulp.src('./js/*.js')
     .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
     .pipe(gulp.dest('./assets/build/js'))
@@ -30,8 +30,8 @@ gulp.task('scripts', ['lint'], function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./assets/js/*.js', ['scripts']);
-  gulp.watch('./assets/scss/*.scss', ['sass']);
+  gulp.watch('./js/*.js', ['scripts']);
+  gulp.watch('./scss/*.scss', ['sass']);
 });
 
 gulp.task('browser-sync', function() {
@@ -41,11 +41,11 @@ gulp.task('browser-sync', function() {
     }
   });
 
-  gulp.watch(['./assets/build/js/*.js','./assets/build/css/*.css']).on('change', browserSync.reload)
+  gulp.watch(['./build/js/*.js','./build/css/*.css']).on('change', browserSync.reload)
 });
 
 gulp.task('lint', function () {
-  return gulp.src(['./assets/js/*.js','!node_modules/**'])
+  return gulp.src(['./js/*.js','!node_modules/**'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
