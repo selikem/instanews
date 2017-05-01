@@ -3,6 +3,7 @@ $(function () {
     $('.loader-gif').hide();
   }
   hideLoader();
+  $('#sections').selectric();
 
 
   $('#sections').on('change', function() {
