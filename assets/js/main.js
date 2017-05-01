@@ -22,7 +22,6 @@ $(function () {
       url: url,
       method: 'GET'
     }).done(function(data) {
-      console.log(data);
       hideLoader();
       $.each(data.results, function(index, value) {
         if (value.multimedia.length >= 5 && runCount < 12 && value.multimedia[4].width >= 2048) {

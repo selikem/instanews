@@ -27,12 +27,16 @@
 	position: absolute;
 	width: 700px;
 	min-height: 100%;
-	left: -150px;
+	left: -100px;
+	@include tablet {
+		left: -150px;
+	}
 }
 
 .abstract-container {
 	position: absolute;
 	bottom: -150px;
+	width: 100%;
 	background: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) no-repeat;
 	padding: 0.5rem 0.5rem;
 	padding-top: 0.5rem;

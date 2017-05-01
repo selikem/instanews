@@ -1,0 +1,4 @@
+[CSS] 
+bears = CSSLintBear, SpaceConsistencyBear 
+files = assets/build/css/*.css 
+use_spaces = True
