@@ -1,19 +1,18 @@
 .header {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 2.5rem;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
 	margin-bottom: 2rem;
 	transition: all 0.5s ease-in-out 0.1s;
 	@include tablet {
-		margin-top: 7.5rem;
 		flex-direction: row;
-		align-items: flex-start;
-		justify-content: center;
+		align-items: center;
 	}
 	@include desktop {
-		margin-top: 10rem;
 		align-self: flex-start;
 		justify-content: flex-start;
 		margin-left: 3rem;
@@ -22,7 +21,6 @@
 
 .search-form-container {
 	margin-top: 1rem;
-	align-self: center;
 }
 
 #sections {
@@ -33,14 +31,14 @@
 }
 
 .out-of-way-header {
-	margin-top: 2rem;
-	@include tablet {
 		height: auto;
+		justify-content: flex-start;	
+	@include tablet {
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
 		.logo img {
-			height: 15vh;
+			height: 10vh;
 		}
 		.logo {
 			margin-left: 2rem;

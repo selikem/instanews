@@ -8,7 +8,6 @@ $(function () {
 
   $('#sections').on('change', function() {
     $('.header').addClass('out-of-way-header');
-    $('footer').addClass('out-of-way-footer');
     $('.loader-gif').show();
     $('.stories').empty();
     var storyString = '';
