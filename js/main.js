@@ -7,7 +7,7 @@ $(function () {
 
 
   $('#sections').on('change', function() {
-    $('.header').addClass('out-of-way-header');
+    $('.header').addClass('out-of-way');
     $('.loader-gif').show();
     $('.stories').empty();
     var storyString = '';

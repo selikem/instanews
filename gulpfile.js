@@ -25,7 +25,7 @@ gulp.task('scripts', ['lint'], function() {
   gulp.src('./js/*.js')
     .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
-    .pipe(gulp.dest('./assets/build/js'))
+    .pipe(gulp.dest('./build/js'))
 
 });
 

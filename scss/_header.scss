@@ -30,7 +30,8 @@
 	font-size: 1.25rem;
 }
 
-.out-of-way-header {
+.out-of-way {
+		margin-top: 2rem;
 		height: auto;
 		justify-content: flex-start;	
 	@include tablet {
