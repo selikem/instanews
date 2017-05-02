@@ -5,7 +5,7 @@ html {
 body {
   background-color: #000;
   color: $base-color;
-	font-family: 'open-sans';
+	font-family: $base-font-stack;
 }
 
 em {
