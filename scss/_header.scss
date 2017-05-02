@@ -34,10 +34,12 @@
 		margin-top: 2rem;
 		height: auto;
 		justify-content: flex-start;	
+		margin-bottom: 5rem;
 	@include tablet {
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
+		margin-bottom: 2rem;
 		.logo img {
 			height: 10vh;
 		}
