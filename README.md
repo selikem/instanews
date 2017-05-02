@@ -3,7 +3,7 @@
 - Create a one-page, responsive website to filter top news stories from the New York Times API.
 - Optimize for 3 widths: mobile, min-width: 600px and min-width: 1000px.
 
-![screenshot of instanews page](http://imgur.com/a/HvPRm)
+![screenshot of instanews page](https://image.ibb.co/bzhKAk/Screen_Shot_2017_05_01_at_9_16_10_PM.png)
 
 ## Technologies Used
 
