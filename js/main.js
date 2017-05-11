@@ -1,3 +1,6 @@
+import '../scss/style.scss';
+
+
 $(function () {
   function hideLoader() {
     $('.loader-gif').hide();

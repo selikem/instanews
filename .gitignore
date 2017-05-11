@@ -11,3 +11,6 @@ node_modules/
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+
+gulpfile.js
+.eslintrc

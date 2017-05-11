@@ -17,14 +17,13 @@
   },
   "homepage": "https://github.com/selikem/instanews#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-eslint": "^3.0.1",
-    "gulp-prettyerror": "^1.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2"
+    "babili-webpack-plugin": "0.0.11",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1"
   }
 }
