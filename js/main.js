@@ -2,10 +2,7 @@ import '../scss/style.scss';
 
 
 $(function () {
-  function hideLoader() {
-    $('.loader-gif').hide();
-  }
-  hideLoader();
+  $('.loader-gif').hide();
   $('#sections').selectric();
 
 
@@ -24,18 +21,18 @@ $(function () {
       url: url,
       method: 'GET'
     }).done(function(data) {
-      hideLoader();
       $.each(data.results, function(index, value) {
         if (value.multimedia.length >= 5 && runCount < 12 && value.multimedia[4].width >= 2048) {
         storyString += '<div class="story-cell"><a href="'+ value.url +'" target="_blank"><img src="'+value.multimedia[4].url+'" class="story-image"><div class="abstract-container"><p class="story-abstract">'+value.abstract+'</p></div></a></div>';
         runCount++ ; 
         }
-
       })
       $('.stories').append(storyString)
     }).fail(function() {
       hideLoader();
       $('.stories').append('<p class="errormsg">Sorry, something went wrong.</p>');
+    }).always(function () {
+      $('.loader-gif').hide();
     });
 
   });
