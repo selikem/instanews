@@ -21,11 +21,9 @@ $(function () {
       url: url,
       method: 'GET'
     }).done(function(data) {
-      $.each(data.results, function(index, value) {
-        if (value.multimedia.length >= 5 && runCount < 12 && value.multimedia[4].width >= 2048) {
+      var filteredList = data.results.filter(function(item) {return item.multimedia.length >= 5}).slice(0,12);
+      $.each(filteredList, function(index, value) {
         storyString += '<div class="story-cell"><a href="'+ value.url +'" target="_blank"><img src="'+value.multimedia[4].url+'" class="story-image"><div class="abstract-container"><p class="story-abstract">'+value.abstract+'</p></div></a></div>';
-        runCount++ ; 
-        }
       })
       $('.stories').append(storyString)
     }).fail(function() {
