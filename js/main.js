@@ -11,7 +11,6 @@ $(function () {
     $('.loader-gif').show();
     $('.stories').empty();
     var storyString = '';
-    var runCount= 0;
     var section = this.value;
     var url = 'https://api.nytimes.com/svc/topstories/v2/'+ section + '.json';
     url += '?' + $.param({
